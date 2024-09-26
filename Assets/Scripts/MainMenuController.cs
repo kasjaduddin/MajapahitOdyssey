@@ -21,6 +21,11 @@ public class MainMenuController : MonoBehaviour
         Buttons[1].onClick.AddListener(OpenCollection);
         Buttons[2].onClick.AddListener(OpenCredit);
         Buttons[3].onClick.AddListener(QuitGame);
+        Buttons[4].onClick.AddListener(PreviousPage);
+        Buttons[5].onClick.AddListener(NextPage);
+        Buttons[6].onClick.AddListener(BackToMenu);
+        Buttons[7].onClick.AddListener(BackToMenu);
+
     }
     // Update is called once per frame
     void Update()
@@ -41,7 +46,29 @@ public class MainMenuController : MonoBehaviour
     // Open credit page
     void OpenCredit()
     {
+        StartMenu.SetActive(false);
+        CreditPage.SetActive(true);
+        CreditPage.transform.GetChild(0).gameObject.SetActive(true);
+        
+    }
 
+    void NextPage()
+    {
+        CreditPage.transform.GetChild(0).gameObject.SetActive(false);
+        CreditPage.transform.GetChild(1).gameObject.SetActive(true);
+    }
+    void PreviousPage()
+    {
+        CreditPage.transform.GetChild(1).gameObject.SetActive(false);
+        CreditPage.transform.GetChild(0).gameObject.SetActive(true);
+    }
+
+    void BackToMenu()
+    {
+        CreditPage.transform.GetChild(1).gameObject.SetActive(false);
+        CreditPage.transform.GetChild(0).gameObject.SetActive(false);
+        CreditPage.SetActive(false);
+        StartMenu.SetActive(true);
     }
     // Quit game
     void QuitGame()
