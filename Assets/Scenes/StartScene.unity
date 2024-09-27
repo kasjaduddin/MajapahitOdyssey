@@ -8316,18 +8316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48462df67dd02334db447ef0253d904f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Buttons:
-  - {fileID: 336026820}
-  - {fileID: 1680432818}
-  - {fileID: 2088811045}
-  - {fileID: 482584954}
-  - {fileID: 1832426276}
-  - {fileID: 778748256}
-  - {fileID: 2105931183}
-  - {fileID: 1416021081}
-  StartMenu: {fileID: 1701749106}
-  CollectionPage: {fileID: 844970582}
-  CreditPage: {fileID: 2101181324}
 --- !u!4 &1894929130
 Transform:
   m_ObjectHideFlags: 0
@@ -8355,7 +8343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ebe5fd1e53d184c96846bae1e255a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenu: {fileID: 1800644117}
 --- !u!82 &1894929132
 AudioSource:
   m_ObjectHideFlags: 0

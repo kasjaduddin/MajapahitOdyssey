@@ -35,7 +35,7 @@ public class MainMenuController : MonoBehaviour
     // Go to play scene
     void PlayGame()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("SiteScene");
     }
     // Open collection page
     void OpenCollection()
